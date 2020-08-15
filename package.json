@@ -7,17 +7,19 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s publi --ci",
+    "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "deploy-storybook": "storybook-to-ghpages"
   },
   "dependencies": {
-    "@material-ui/core": "latest",
+    "@material-ui/core": "4.11.0",
     "@material-ui/icons": "^4.9.1",
-    "clsx": "latest",
+    "@storybook/addon-essentials": "^6.0.10",
+    "@typescript-eslint/eslint-plugin": "^3.9.0",
+    "clsx": "^1.1.1",
     "react": "latest",
     "react-dom": "latest",
-    "react-scripts": "latest"
+    "react-scripts": "3.4.3"
   },
   "browserslist": {
     "production": [
@@ -32,12 +34,16 @@
     ]
   },
   "devDependencies": {
-    "@react-theming/storybook-addon": "^1.0.0",
-    "@storybook/addon-actions": "^5.3.18",
-    "@storybook/addon-links": "^5.3.18",
-    "@storybook/addons": "^5.3.18",
-    "@storybook/preset-create-react-app": "^2.1.1",
-    "@storybook/react": "^5.3.18",
-    "@storybook/storybook-deployer": "^2.8.5"
+    "@babel/core": "^7.11.1",
+    "@react-theming/storybook-addon": "^1.0.3",
+    "@storybook/addon-actions": "^6.0.10",
+    "@storybook/addon-links": "^6.0.10",
+    "@storybook/addons": "^6.0.10",
+    "@storybook/node-logger": "^6.0.10",
+    "@storybook/preset-create-react-app": "^3.1.4",
+    "@storybook/react": "^6.0.10",
+    "@storybook/storybook-deployer": "^2.8.6",
+    "babel-loader": "^8.1.0",
+    "react-is": "^16.13.1"
   }
 }

@@ -26,7 +26,7 @@ function Copyright() {
   );
 }
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   paper: {
     marginTop: theme.spacing(8),
     display: 'flex',
@@ -43,6 +43,25 @@ const useStyles = makeStyles((theme) => ({
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
+    '&.MuiButton-containedPrimary': {
+      color: 'rgba(0,0,0,0.8)',
+      '&:hover': {
+        backgroundColor: theme.palette.primary.dark,
+        color: '#000',
+      },
+      '& .MuiTouchRipple-child': {
+        backgroundColor: theme.palette.primary.enhance,
+      },
+      '&.Mui-disabled': {
+        backgroundColor: theme.palette.primary.main,
+        color: 'rgba(0,0,0,0.4)',
+        opacity: 0.5,
+        '&:hover': {
+          backgroundColor: theme.palette.primary.main,
+          color: 'rgba(0,0,0,0.4)',
+        },
+      },
+    },
   },
 }));
 
@@ -115,7 +134,7 @@ export default function SignUp() {
             </Grid>
           </Grid>
           <Button
-            type="submit"
+            //type="submit"
             fullWidth
             variant="contained"
             color="primary"
